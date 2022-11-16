@@ -1,0 +1,162 @@
+.post {
+    width: 900px;
+    padding: 1rem;
+    background-color: hsl(229, 18%, 19%);
+    
+    
+    margin-bottom: 8px;
+    display: inline-block;
+    
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+
+}
+
+.spacer_div {
+    display: none
+}
+.post_info {
+    display: inline;
+    padding-bottom: 20px;
+}
+
+#info_date {
+    font-size: .9rem;
+    font-style: bold;
+    color: grey  !important;
+}
+
+#info_title {
+    font-size: 1.45rem;
+}
+
+#info_description {
+    font-size: .8rem;
+    color: rgb(124, 106, 124);
+}
+.post_info > a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.fa-folder-open {
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+}
+.post_info > p{
+    padding-left: 3rem;
+    display: inline-block;
+    padding-right: 5rem;
+    color: white;
+}
+
+.info_button {
+    text-decoration: none;
+}
+
+.info_description {
+    color: #f4f4f4;
+}
+
+
+@media (max-width: 1200px) {
+    .post {
+        width: 700px;
+    }
+    #info_title {
+        font-size: 1rem;
+    }
+    #info_description {
+        font-size: .8rem;
+    }
+
+    .spacer_div {
+        display: grid;
+    }
+
+} 
+
+    @media (max-width: 960px) {
+    #info_title {
+        font-size: 1rem;
+    }
+    #info_description {
+        font-size: .7rem;
+    }
+    .post {
+        width: 500px;
+    }
+    #info_date {
+        font-size: .7rem;
+        padding-right: 30px;
+    }
+    .spacer_div {
+        display: grid;
+    }
+}
+
+@media (max-width: 750px) {
+    #info_title {
+        font-size: .9rem;
+    }
+    #info_description {
+        font-size: .7rem;
+    }
+    .post {
+        width: 500px;
+    }
+    .fa-folder-open {
+        display: none;
+    }
+    #info_date {
+        font-size: .5rem;
+        position: fixed;
+        left: 70%;
+    }
+    #info_title {
+        position: fixed;
+        left: 10%;
+    }
+    #info_display {
+        display: none;
+    }
+
+    #info_description {
+        display: none;
+    }
+   
+
+}
+
+@media (max-width: 560px) {
+    #info_title {
+        font-size: .5rem;
+    }
+   
+    .post {
+        width: 400px;
+       
+    }
+    
+} 
+
+@media (min-width: 300px) {
+    #info_title {
+        font-size: 1rem;
+        position: absolute;
+        left: 15%;
+    }
+   
+    .post {
+        width: 150px;
+       
+    }
+    
+    #info_date {
+        font-size: .7rem;
+        position: absolute;
+        left: 28%;
+    }
+} 

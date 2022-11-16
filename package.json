@@ -1,0 +1,30 @@
+{
+  "name": "bloghomepage",
+  "version": "1.0.0",
+  "description": "> npm init -y > created front-end and backend folders > installed dependencies: nodemon express dotenv > npm i --save-dev nodemon and concurrently >>installed dev dependencies: concurrently and nodemon",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node server/seederScript.js"
+  },
+  "keywords": [],
+  "author": "tetr4mer",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "redux-devtools": "^3.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "BlogHomepage"
+  }
+}
