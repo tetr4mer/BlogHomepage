@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(229, 18%, 19%);
+    background-image: url("../src/screens/background_img2.png");
+    background-size: 100vw 100vh;
+}
+
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
