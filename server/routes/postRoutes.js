@@ -2,19 +2,22 @@ const express = require('express');
 const router = express.Router();
 
 //importing from controllers....POST SECTION !
-const {getAllPosts, getPostById} = require('../controller/postController.js');
+const {getAllPosts, getPostById, getPostByTitle} = require('../controller/postController.js');
 
 //@desc GET all posts from db at '/' address OF API.......
 //@route GET /api/posts.
 //@access Public
 router.get("/", getAllPosts);
 
-
+router.get("/:title", getPostByTitle);
 
 //@desc GET a single post from db at '/:id' address OF API......
 //@route GET /api/posts/:id
 //@access Public
 router.get("/:id", getPostById); 
+
+
+
 
 //importing from controllers.....Search Query SECTION!
 // const {getAllSearches, getSearchById} = require('../controller/searchController');

@@ -27,7 +27,7 @@ function App() {
     <main>
       <Routes>
           <Route path="/" element = { <PostsBench/> } />
-          <Route path="post/:id" element = { <PostScreen/> } />
+          <Route path="post/:title" element = { <PostScreen/> } />
           <Route path="/technicalnotes" element = { <TechnicalNotesScreen/> } />
           <Route path="/generaltech" element = { <PostsBench/> } />
       </Routes>

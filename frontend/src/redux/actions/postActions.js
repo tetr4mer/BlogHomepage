@@ -59,6 +59,26 @@ export const getPostDetails = (id) => async (dispatch) => {
     }
 };
 
+export const getPostDetailsByTitle = (title) => async (dispatch) => {
+    try {
+        dispatch({ type: actionTypes.GET_POSTS_REQUEST });
+
+        const {data} = await axios.get(`/api/posts/${title}`);
+
+        dispatch({
+            type: actionTypes.GET_POST_DETAILS_SUCCESS,
+            payload: data
+        })
+    }
+    catch(error) {
+        dispatch({
+            type: actionTypes.GET_POSTS_FAIL,
+            payload: error.response && error.response.data.message ? error.response.data.message : error.message,
+        });
+    }
+}
+
+
 export const removePostDetails = () => (dispatch) => {
     dispatch({
         type: actionTypes.GET_POST_DETAILS_RESET

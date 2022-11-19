@@ -48,8 +48,8 @@ const PostsBench = ({postID, postTitle, postDate, postDesc}) => {
                           <Fragment>
                           <tr /*key={unique post.id*/className="posts_row">
                             
-                            <td id='posts_date'> <Link to={`/post/${post._id}`}> {post.postDate} </Link> </td>
-                            <td id='posts_title'><Link to={`/post/${post._id}`} title={post.postDesc}> {post.postTitle} </Link> </td>
+                            <td id='posts_date'> <Link to={`/post/${post.postTitle}`}> {post.postDate} </Link> </td>
+                            <td id='posts_title'><Link to={`/post/${post.postTitle}`} title={post.postDesc}> {post.postTitle} </Link> </td>
                             {/* <td id='posts_desc'><Link to={`/post/${post._id}`}> {post.postDesc} </Link> </td> */}
                           </tr>
                           

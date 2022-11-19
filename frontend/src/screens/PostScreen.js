@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { useParams } from "react-router-dom";
 
 
-import { getPostDetails } from '../redux/actions/postActions';
+import { getPostDetailsByTitle } from '../redux/actions/postActions';
 
 
 
@@ -15,43 +15,44 @@ const PostScreen = ({match}) => {
     const postDetails = useSelector((state) => state.getPostDetails);
     const {post, loading, error} = postDetails;
 
-    const {id} = useParams();
+    const {title} = useParams();
 
     useEffect(() => {
     
-     
-      if (post && id !== post._id) {
+      if (post && title !== post.postTitle) { //if post exists, and, id (in the URL) does not equal the returned post obj. id field then dispatch to getPostDetails with the URL id
         
-        dispatch(getPostDetails(id))
+        dispatch(getPostDetailsByTitle(title))
 
       }
-    }, [dispatch, id, post]);
-    
+    }, []);
+    //dispatch, post, title
+    console.log(post);
+   
   return (
     <div className='postScreen'>
       {loading ? (<h2> Loading....</h2>) : error ? (<h2> Error....</h2>) : (
         <div className='postScreen_div'>
-          <body>
+        
         
           <div id="background"> 
-          <h1 className ="post_title">{post.postTitle}</h1>
+          <h1 className ="post_title">{post.title}</h1>
           <p></p>
           
-          <content className="post_content">
+          <main className="post_content">
             
             <div className='postcContent_div'>
-              <p dangerouslySetInnerHTML={{ __html: post.postContent }}></p>
+              <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
 
               {/*{post.postContent}  */} 
             </div>
             
-          </content>
+          </main>
           
       
       
          
           </div>
-        </body>
+      
         </div>
           )}
        
