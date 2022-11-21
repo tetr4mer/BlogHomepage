@@ -35,9 +35,6 @@ function App() {
   
   {/*HomeScreen */}
 
-  {/*Search Screen to view all Searches */}
-  {/*Individual Search ID Screen to view individual Searches */}
-  {/*CartScreen type where you can 1.) choose/gather relevant interesting searches/resources 2.) Option to download to your own bookmark folder */}
   
   </Router>
  

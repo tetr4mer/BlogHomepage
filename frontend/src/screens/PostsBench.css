@@ -6,7 +6,7 @@
     /* margin-top: 130px; */
     position: absolute;
     left: 40%;
-    background-color: rgba(30, 31, 39, 0.75);
+    background-color: rgba(30, 31, 39, 0.10);
 }
 
 
@@ -14,7 +14,7 @@
 .page_title {
     margin-top: 120px;
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 150px;
     font-size: 1rem;
     text-align: center;
     color:#bfbfd1;
@@ -28,15 +28,18 @@
 
 
 #posts_date a {
-    color: rgb(96, 28, 221);
-    font-size: .8rem;
+    /*color: rgb(96, 28, 221);*/
+    color: gold;
+    font-size: 1.2rem;
     font-weight: bold;
  }
 
 
  #posts_title a {
-    color: gold;
+    /*color: gold; */
+    color: #bfbfd1;
     padding-left: 50px;
+    
     font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
@@ -68,11 +71,87 @@
     color: #e7e981;
 }
 
+@media (max-width: 1200px) {
+    #posts_title a {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #posts_date a {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .page_title {
+        font-size: .8rem;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 300px;
+    }
+
+    .postsTable {
+        /* margin-top: 130px; */
+        position: absolute;
+        left: 25%;
+        background-color: rgba(30, 31, 39, 0.75);
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .page_title {
+        font-size: .8rem;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 255px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .page_title {
+        font-size: .8rem;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 184px;
+    }
+}
+
+@media (max-width: 580px) {
+.postsTable {
+    
+    position: absolute;
+    left: 10%;
+}
+
+#posts_title a {
+    padding-right:20px;
+    font-size: .8rem;
+    font-weight: bold;
+ }
+
+ #posts_date a {
+    font-size: .8rem;
+    font-weight: bolder;
+ }
+
+ .page_title {
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 60px;
+    
+}
+
+}
+
+
 
 @media (max-width: 400px) {
   
     .page_title{
         font-size: .8rem;
+        
     }
 
     .postsTable {
@@ -89,7 +168,7 @@
         font-weight: bold;
      }
 
-    #posts_desc a {
+     #posts_desc a {
         font-size: .5rem;
     }
 
@@ -98,3 +177,4 @@
         font-weight: bolder;
      }
 } 
+

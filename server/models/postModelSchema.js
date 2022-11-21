@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const postSchema = new mongoose.Schema({
+
+const postsSchema = new mongoose.Schema({
     postID: {
         type: String,
         required: true
@@ -17,12 +18,14 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    postContent: {
-        type: String,
-        required: true
-    }
+    postContent: [{
+        paragraph: 
+            {type: String, required: true},
+        paragraphCode:
+            {type: String, required: false}
+        }]
 });
 
-const postModel = mongoose.model('posts', postSchema);
+const postModel = mongoose.model('posts', postsSchema);
 
 module.exports = postModel;

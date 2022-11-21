@@ -47,4 +47,3 @@ const Top = ({click, show}) => {
 }
 
 export default Top;
-
