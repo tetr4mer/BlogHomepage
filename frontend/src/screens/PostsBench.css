@@ -5,7 +5,7 @@
 .postsTable {
     /* margin-top: 130px; */
     position: absolute;
-    left: 40%;
+    left: 36%;
     background-color: rgba(30, 31, 39, 0.10);
 }
 
@@ -33,6 +33,10 @@
     font-size: 1.2rem;
     font-weight: bold;
  }
+ #posts_date a:hover {
+   
+    color: rgb(253, 195, 33);
+}
 
 
  #posts_title a {
@@ -45,6 +49,10 @@
     text-align: left;
  }
 
+ #posts_title a:hover {
+    /* color: #33FF00; */
+    color: white;
+ }
  
 .posts_row td {
     color: blue;
@@ -70,6 +78,16 @@
 .posts_title {
     color: #e7e981;
 }
+
+@media(max-width: 1500px) {
+    .postsTable {
+        position: absolute;
+        left: 35%;
+        background-color: rgba(30, 31, 39, 0.10);
+    }
+    
+}
+
 
 @media (max-width: 1300px) {
     #posts_title a {
@@ -122,7 +140,7 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
     #posts_title a {
         font-size: .8rem;
         font-weight: bold;
@@ -140,7 +158,7 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 609px) {
 .postsTable {
     
     position: absolute;
@@ -180,7 +198,7 @@
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   
     .page_title{
         font-size: .6rem;
@@ -195,16 +213,17 @@
 
     #posts_title a {
         padding-right:20px;
-        font-size: .6rem;
+        font-size: .65rem;
         font-weight: bold;
+        text-align: left;
      }
 
      #posts_desc a {
-        font-size: .5rem;
+        font-size: .65rem;
     }
 
     #posts_date a {
-        font-size: .6rem;
+        font-size: .5rem;
         font-weight: bolder;
      }
 } 

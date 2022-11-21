@@ -21,8 +21,8 @@ const Top = ({click, show}) => {
 
         <Link style={{ textDecoration: 'none' }} to="/">
         <div className="top_title">
-            <h3> Tetr4mer's</h3>
-            <h2> Bioinformatics Greenhouse </h2>
+            <h3> 👋 Tetr4mer's </h3>
+            <h2> E-Notes</h2>
         </div>
         </Link>
 

@@ -24,7 +24,9 @@
 }
 
 .top_title {
-    color: #81c902;
+    /* color: rgb(206, 157, 24); */
+    /*color: rgb(112, 147, 180); */
+    color: #659f74;
     font-size: 1.3rem;
     cursor: pointer;
     font-family: 'Courier', 'Courier New', 'Monospace';
@@ -113,7 +115,7 @@
 
     .top_title {
         position: absolute;
-        left: 78%;
+        left: 88%;
     }
     .top_title h2 {
         font-size: 1.1rem;
@@ -125,7 +127,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 651px) {
     .top_title h2 {
         font-size: 1rem;
     }
@@ -144,7 +146,7 @@
         justify-content: right; */
         position: fixed;
         top: 2%;
-        left: 50%;
+        left: 88%;
         transform: translate(-50%, 0);
     }
 
@@ -176,8 +178,8 @@
         text-align: right;
         justify-content: right; */
         position: fixed;
-        top: 2%;
-        left: 50%;
+       
+        left: 88%;
         transform: translate(-50%, 0);
     }
 

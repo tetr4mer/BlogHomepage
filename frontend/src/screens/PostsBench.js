@@ -31,7 +31,7 @@ const PostsBench = ({postID, postTitle, postDate, postDesc}) => {
           
             <div className="postsTable_div">
               
-                    <h3 className="page_title"> A student's notes on progress from the bench. </h3>
+                    <h3 className="page_title">  A Developer's Chronicles in Tech & Life Sciences </h3>
                     <table className = "postsTable">
                       {/* <thead>
                         <tr>
@@ -44,7 +44,7 @@ const PostsBench = ({postID, postTitle, postDate, postDesc}) => {
                           <Fragment>
                           <tr /*key={unique post.id*/className="posts_row">
                             
-                            <td id='posts_date'> <Link to={`/post/${post.postTitle}`}> {post.postDate} </Link> </td>
+                            <td id='posts_date'> <Link to={`/post/${post.postTitle}`} title={post.postDesc}> 📂 {post.postDate} </Link> </td>
                             <td id='posts_title'><Link to={`/post/${post.postTitle}`} title={post.postDesc}> {post.postTitle} </Link> </td>
                             {/* <td id='posts_desc'><Link to={`/post/${post._id}`}> {post.postDesc} </Link> </td> */}
                           </tr>

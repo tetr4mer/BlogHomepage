@@ -17,7 +17,7 @@
     padding-left: 25px;
     text-align: center;
     color: rgb(206, 157, 24);
- 
+    font-size: 1.6rem;
 
     
     font-family: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
@@ -65,6 +65,9 @@
 }
 
 @media (max-width: 960px) {
+    .post_title {
+        font-size: 1.3rem;
+    }
     .post_content_div {
         padding-left: 100px;
         padding-right: 100px;
@@ -90,6 +93,9 @@
 
 @media (max-width: 420px) {
     .post_title {
+        font-size: 1rem;
+    }
+    .post_title {
         text-align: left;
     }
     .post_content {
@@ -107,6 +113,7 @@
 
 @media (max-width: 330px) {
     .post_title {
+        font-size: .9rem;
         text-align: left;
     }
     .post_content {
