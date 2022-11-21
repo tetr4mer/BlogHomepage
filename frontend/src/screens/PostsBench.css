@@ -29,7 +29,7 @@
 
 #posts_date a {
     /*color: rgb(96, 28, 221);*/
-    color: gold;
+    color: rgb(206, 157, 24);
     font-size: 1.2rem;
     font-weight: bold;
  }
@@ -71,6 +71,20 @@
     color: #e7e981;
 }
 
+@media (max-width: 1300px) {
+    #posts_title a {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+    #posts_date a {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+}
+
+
 @media (max-width: 1200px) {
     #posts_title a {
         font-size: 1rem;
@@ -109,6 +123,15 @@
 
 
 @media (max-width: 720px) {
+    #posts_title a {
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    #posts_date a {
+        font-size: .8rem;
+        font-weight: bold;
+    }
     .page_title {
         font-size: .8rem;
         font-weight: bold;
@@ -143,6 +166,16 @@
     
 }
 
+#posts_title a {
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+#posts_date a {
+    font-size: .6rem;
+    font-weight: bold;
+}
+
 }
 
 
@@ -150,7 +183,7 @@
 @media (max-width: 400px) {
   
     .page_title{
-        font-size: .8rem;
+        font-size: .6rem;
         
     }
 
@@ -159,12 +192,10 @@
         left: 2%;
     }
 
-    /* .postsTable_header {
-        font-size: .8rem;
-    } */
+
     #posts_title a {
         padding-right:20px;
-        font-size: 1rem;
+        font-size: .6rem;
         font-weight: bold;
      }
 
@@ -173,7 +204,7 @@
     }
 
     #posts_date a {
-        font-size: .5rem;
+        font-size: .6rem;
         font-weight: bolder;
      }
 } 

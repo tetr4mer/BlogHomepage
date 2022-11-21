@@ -30,11 +30,7 @@ const PostsBench = ({postID, postTitle, postDate, postDesc}) => {
     return (
           
             <div className="postsTable_div">
-              loading ? (
-                  <h2>Loading...</h2>
-                ) : error ? (
-                  <h2>{error}</h2>
-                ) : 
+              
                     <h3 className="page_title"> A student's notes on progress from the bench. </h3>
                     <table className = "postsTable">
                       {/* <thead>
